@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cursos</title>
+        <link rel="stylesheet" href="/html/css/style(alumnos).css">
+        <link rel="stylesheet" href="/HTMLExamen/css/alumno(alumno).css">
+        <script type="module" src="./js/scriptAlumno.js"></script> 
+        <!-- <script type="module" src="./js/utiles.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="contenido">Buscar alumnos</h1>
+        <div>
+            <form id="formAlumnos">
+                <input type="text" id="idNif" placeholder="Introduce Un ID o NIF" />
+                <input type="text" id="nombre" placeholder="Introduce Un Nombre" />
+                <button type="button" onclick="buscarAlumnos()">Buscar</button>
+                <!-- <div class="button-container-2">
+                    <a class="btn-3" type="button" onclick="buscarAlumnos()">
+                        <i>B</i><i>U</i><i>S</i><i>C</i><i>A</i><i>R</i>
+                    </a>
+                </div> -->
+            </form>
+            <table id="tablaAlumnos">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nif</th>
+                        <th>Nombre</th>
+                        <th>Apellido1</th>
+                        <th>Apellido2</th>
+                        <th>Ciudad</th>
+                        <th>Sexo</th>
+                    </tr>
+                </thead>
+                <tbody id="resultados">
+                    <!-- Las asignaturas se cargarán aquí dinámicamente -->
+                    </tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="button-container2">
+                
+            <button onclick="window.location.href='./index.html'" class="button type1"></button>
+        
+        </div>
+    </div>
+</body>
+
+</html>

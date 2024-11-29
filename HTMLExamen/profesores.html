@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profesores</title>
+        <link rel="stylesheet" href="../html/css/style(profesores).css">
+        <script type="module" src="./js/scriptProfesor.js"></script>
+        <script type="module" src="./js/utiles.js"></script>
+    </head>
+    
+    <body>
+        <main class="contenido">
+            <h1 class="contenido">Gestión de Profesores</h1>
+            <div>
+                <div>
+                    <form>
+                        <input type="text" id="nombre" placeholder="Nombre" />
+                        <input type="text" id="apellido1" placeholder="Primer Apellido" />
+                        <input type="text" id="apellido2" placeholder="Segundo Apellido" />
+                        <select id="sexo">
+                            <option value="" disabled selected>Sexo</option>
+                            <option value="H">Hombre</option>
+                            <option value="M">Mujer</option>
+                        </select>
+                        <select id="departamento">
+                            <!-- Aqui Van Los Departamentos Desplegables -->
+                            </select>
+                            
+                            <div class="button-container">
+                                <a class="btn" type="button" onclick="searchprofe()">
+                                    <i>B</i><i>U</i><i>S</i><i>C</i><i>A</i><i>R</i>
+                                </a>
+                            </div>
+                        
+                    </form>
+                
+                </div>
+                
+                <div>
+                    
+                    <table id="tablaProfesores">
+                        <thead>
+                                <tr>
+                                    <th>NIF</th>
+                                    <th>Nombre</th>
+                                    <th>Apellido 1</th>
+                                    <th>Apellido 2</th>
+                                    <th>Ciudad</th>
+                                    <th>Sexo</th>
+                                    <th>Departamento</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultados"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+            
+            <div class="button-container2">
+                
+                <button onclick="window.location.href='./index.html'" class="button type1"></button>
+            
+            </div>
+    </body>
+</html>
